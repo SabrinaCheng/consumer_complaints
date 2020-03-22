@@ -1,5 +1,8 @@
+#!/usr/bin/env python3
+
 import time
 import csv
+import sys
 
 def print_time_used(start_time):
     elapsed_time = time.time() - start_time
@@ -60,12 +63,17 @@ def main(input_filename, output_filename):
     # calculate variables
     output_list = []
     for id in sorted(cnt_dict):
-        id_cnt_dict = cnt_dict[id]
         product, year = id
-        company_cnt = len(id_cnt_dict)
+        id_cnt_dict = cnt_dict[id]
+        # total number of complaints received for that product and year
         complaints_cnts_list = id_cnt_dict.values()
         total_complaints_cnt = sum(complaints_cnts_list)
+        # total number of companies receiving at least one complaint for that product and year
+        company_cnt = len(id_cnt_dict)
+        # highest percentage (rounded to the nearest whole number) of total complaints filed 
+        # against one company for that product and year
         max_percentage = round((max(complaints_cnts_list) / total_complaints_cnt) * 100)
+        
         output_list.append(
             [product, year, str(total_complaints_cnt), str(company_cnt), str(max_percentage)])
 
@@ -83,10 +91,16 @@ def main(input_filename, output_filename):
     print_time_used(start_time=start_time)
 
 if __name__ == "__main__":
+    if(len(sys.argv) != 3):
+        raise(Exception("Error: expected 2 arguments"))
+
+    input_filename = sys.argv[1]
+    output_filename = sys.argv[2]
+
     start_time = time.time()
 
-    input_filename = "../insight_testsuite/tests/your-own-test_2/input/complaints.csv"
-    output_filename = "../insight_testsuite/tests/your-own-test_2/output/report.csv"
+    # input_filename = "../input/complaints.csv"
+    # output_filename = "../output/report.csv"
     main(input_filename, output_filename)
 
     print("=== Program completed ===", end="\n")
