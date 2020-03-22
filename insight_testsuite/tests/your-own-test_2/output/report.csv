@@ -1,0 +1,49 @@
+bank account or service,2015,1,1,100
+bank account or service,2016,1,1,100
+checking or savings account,2017,9,7,22
+checking or savings account,2018,27,13,19
+checking or savings account,2019,735,89,14
+checking or savings account,2020,7,6,29
+consumer loan,2015,1,1,100
+consumer loan,2016,2,2,50
+consumer loan,2017,1,1,100
+credit card,2016,4,4,25
+credit card,2017,1,1,100
+credit card or prepaid card,2017,2,2,50
+credit card or prepaid card,2018,41,15,37
+credit card or prepaid card,2019,693,53,17
+credit card or prepaid card,2020,7,6,29
+credit reporting,2016,1,1,100
+"credit reporting, credit repair services, or other personal consumer reports",2017,12,8,25
+"credit reporting, credit repair services, or other personal consumer reports",2018,300,25,58
+"credit reporting, credit repair services, or other personal consumer reports",2019,4747,270,48
+"credit reporting, credit repair services, or other personal consumer reports",2020,125,13,63
+debt collection,2015,4,3,50
+debt collection,2016,10,4,60
+debt collection,2017,19,14,21
+debt collection,2018,71,47,13
+debt collection,2019,1724,514,7
+debt collection,2020,31,27,10
+"money transfer, virtual currency, or money service",2017,1,1,100
+"money transfer, virtual currency, or money service",2018,5,4,40
+"money transfer, virtual currency, or money service",2019,124,43,31
+"money transfer, virtual currency, or money service",2020,3,2,67
+mortgage,2012,1,1,100
+mortgage,2015,1,1,100
+mortgage,2016,3,3,33
+mortgage,2017,9,8,22
+mortgage,2018,52,32,12
+mortgage,2019,650,129,8
+mortgage,2020,10,9,20
+payday loan,2016,2,1,100
+"payday loan, title loan, or personal loan",2018,10,5,60
+"payday loan, title loan, or personal loan",2019,139,80,4
+"payday loan, title loan, or personal loan",2020,1,1,100
+student loan,2017,4,4,25
+student loan,2018,6,3,50
+student loan,2019,243,47,39
+student loan,2020,1,1,100
+vehicle loan or lease,2017,3,2,67
+vehicle loan or lease,2018,11,10,18
+vehicle loan or lease,2019,141,65,9
+vehicle loan or lease,2020,4,4,25
