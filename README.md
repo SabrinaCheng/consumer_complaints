@@ -8,7 +8,8 @@
 
 
 ## Introduction
-Consumer Financial Protection Bureau provides a database containing a collection of complaints about consumer financial products and services. This project identifies the number of complaints filed and how they're spread across different companies. The input file has the following columns: Date received, Product, Sub-product, Issue, Sub-issue, Consumer complaint narrative, Company public response, Company, State, ZIP code, Tags, Consumer consent provided?, Submitted via, Date sent to company, Company response to consumer, Timely response?, Consumer disputed?, Complaint ID. The output result contains information about financial product, year, the total number of complaints, number of companies receiving a complaint, and the highest percentage of complaints directed at a single company.
+Consumer Financial Protection Bureau provides a database containing a collection of complaints about consumer financial products and services. This project identifies the number of complaints filed and how they're spread across different companies. The input file has the following columns: Date received, Product, Sub-product, Issue, Sub-issue, Consumer complaint narrative, Company public response, Company, State, ZIP code, Tags, Consumer consent provided?, Submitted via, Date sent to company, Company response to consumer, Timely response?, Consumer disputed?, Complaint ID.<br>
+The output result contains information about financial product, year, the total number of complaints, number of companies receiving a complaint, and the highest percentage of complaints directed at a single company.
 
 
 ## How to use
@@ -18,7 +19,7 @@ Run `sh run.sh`
 
 ## Design
 1. Read input CSV file<br>
-Python standard package "CSV" is used to read the input CSV file. Even though reading without using package also works(counting number of quotes and commas to split columns), according to my experiments, the running time is longer, which might be problematic when dealing with large datasets. To save memory, only three selected columns, Product, Date received, and Company, are read.
+Python standard package "CSV" is used to read the input CSV file. Even though reading without using package also works(counting number of quotes and commas to split columns), according to the experiments, the running time is longer, which might be problematic when dealing with large datasets. To save memory, only three selected columns, Product, Date received, and Company, are read.
 
 2. Clean data<br>
 Product and Company names are converted to lowercase. Year information is extracted from Date received by getting the first element after splitting the string by "-".
