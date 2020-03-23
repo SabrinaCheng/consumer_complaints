@@ -4,7 +4,7 @@
 1. [Introduction](README.md#introduction)
 1. [How to use](README.md#how-to-use)
 1. [Design](README.md#design)
-1. [Tests](README.md#test)
+1. [Tests](README.md#tests)
 
 
 ## Introduction
