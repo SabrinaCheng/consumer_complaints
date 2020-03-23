@@ -26,12 +26,12 @@ Product and Company names are converted to lowercase. Year information is extrac
 
 3. Count number of complaints and companies, and then calculate the highest percentage of complaints directed at a single company<br>
 Python dictionary is used to store counting data, with tuple consisting of product and year as key and another dictionary as value. The dictionaries in the dictionary have company name as key and count as value. For example, {(product, year): (company: 1}. To calculate target variables for a product and a specific year:
-* total number of complaints received for that product and year<br>
- Sum up corresponding dictionary values.
- * total number of companies receiving at least one complaint for that product and year<br>
- Get the length of the corresponding dictionary.
- * highest percentage (rounded to the nearest whole number) of total complaints filed against one company for that product and year<br>
- Get the maximum number of complaints from the corresponding dictionary, divide it by the total number of complaints received for that product and year, and then round it to a whole number.
+    * total number of complaints received for that product and year<br>
+    Sum up corresponding dictionary values.
+    * total number of companies receiving at least one complaint for that product and year<br>
+    Get the length of the corresponding dictionary.
+    * highest percentage (rounded to the nearest whole number) of total complaints filed against one company for that product and year<br>
+    Get the maximum number of complaints from the corresponding dictionary, divide it by the total number of complaints received for that product and year, and then round it to a whole number.
 
 4. Output a csv file "report.csv"<br>
 Python standard package "CSV" is used to write the results to a CSV file.
