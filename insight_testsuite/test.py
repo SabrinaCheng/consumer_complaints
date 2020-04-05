@@ -19,7 +19,7 @@ def test(actual, expected, report_filename):
 
 if __name__ == "__main__":
     # test_1, your-own-test_1
-    path = 'tests/your-own-test_3/'
+    path = 'tests/your-own-test_1/'
     actual = path + 'output/report.csv'
     expected = path + 'output/expected.csv'
     report_filename = path + 'output/test_result.csv'
